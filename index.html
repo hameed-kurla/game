@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111215">
+  <meta name="description" content="Three little games for your next little break. Play Memory Match, Tic-Tac-Toe, and Quick Reflex in Hameed's Arcade.">
+  <title>Hameed's Arcade — A little play goes a long way.</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Hameed's Arcade home"><span class="brand-mark">✳</span> hameed<span class="brand-light">/arcade</span></a>
+    <nav aria-label="Main navigation"><a href="#games">The games</a><a href="#about">About this playground <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> SMALL GAMES. GOOD TIMES.</p><h1>A little play.<br>A <em>better</em> day.</h1><p class="intro">Give your brain a coffee break.<br>Pick a game, find your flow, and make your next five minutes a little more fun.</p><a class="primary" href="#games">Find your next game <span>↘</span></a><p class="hero-note">No downloads. No sign-ups. Just play.</p></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="art-spark">✳</span><div class="art-card art-card-back">O</div><div class="art-card art-card-front">✕</div><span class="art-caption">LESS SCROLL. MORE PLAY.</span><span class="art-small-spark">✦</span></div>
+    </section>
+    <section class="games-section wrap" id="games" aria-labelledby="games-heading"><div class="section-heading"><div><p class="eyebrow">THE COLLECTION / 001—003</p><h2 id="games-heading">Pick your kind of play<span>.</span></h2></div><p>Three ways to take a good break.</p></div>
+      <div class="game-grid">
+        <article class="game-card"><div class="card-art memory-art" aria-hidden="true"><span class="game-index">01 / FOCUS</span><div class="mini-memory"><i>✦</i><i>?</i><i>?</i><i>✦</i></div><span class="art-label">MAKE A CONNECTION</span></div><div class="card-body"><div class="tags"><span>MEMORY</span><span>1 PLAYER</span></div><h3>Memory Match</h3><p>A little focus goes a long way. Flip the cards and find all six pairs.</p><button class="play-button" data-game="memory">Let's match <span>↗</span></button></div></article>
+        <article class="game-card"><div class="card-art tic-art" aria-hidden="true"><span class="game-index">02 / STRATEGY</span><div class="mini-tic"><i>✕</i><i>○</i><i></i><i></i><i>✕</i><i>○</i><i>○</i><i></i><i>✕</i></div><span class="art-label">THREE'S A WIN</span></div><div class="card-body"><div class="tags"><span>STRATEGY</span><span>2 PLAYERS</span></div><h3>Tic-Tac-Toe</h3><p>An old-school rivalry. Grab a friend and claim your three in a row.</p><button class="play-button" data-game="tic">Make your move <span>↗</span></button></div></article>
+        <article class="game-card"><div class="card-art reflex-art" aria-hidden="true"><span class="game-index">03 / REFLEX</span><div class="reflex-target"><span>ϟ</span></div><span class="art-label">BLINK AND YOU'LL MISS IT</span></div><div class="card-body"><div class="tags"><span>REACTION</span><span>1 PLAYER</span></div><h3>Quick Reflex</h3><p>Ready. Steady. Green. How fast can you react when the color changes?</p><button class="play-button" data-game="reflex">Test your reflexes <span>↗</span></button></div></article>
+      </div>
+    </section>
+    <section class="about wrap" id="about"><span class="about-star" aria-hidden="true">✳</span><div><p class="eyebrow">A WORK IN PLAY</p><h2>Built with curiosity.<br>Made for a little joy.</h2><p>I'm Hameed, and this is my corner of the internet for learning, experimenting, and making things you can play. Three games to start. More adventures to come.</p></div><a class="source-link" href="https://github.com/hameed-kurla/game" target="_blank" rel="noopener noreferrer">Explore the code <span>↗</span></a></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="./">hameed<span class="brand-light">/arcade</span></a><p>Handcrafted for your downtime.</p><a href="#">Back to top ↑</a></footer>
+  <dialog id="game-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><p class="eyebrow">HAMEED / ARCADE</p><button id="close-dialog" class="icon-button" aria-label="Close game">✕</button></div><h2 id="dialog-title"></h2><p id="game-instructions"></p><div id="game-content"></div></dialog>
+</body>
+</html>
